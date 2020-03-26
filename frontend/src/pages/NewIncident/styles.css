@@ -1,0 +1,42 @@
+.new-incident{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 25px;
+    padding: 70px;
+    border-radius: 8px;
+    background-color: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0,0,0,0.2);
+}
+
+.left{
+    width: 100%;
+    max-width: 360px;
+    margin: 10px;
+}
+.left > h1{
+    margin: 64px 0 32px;
+    font-size: 25px;
+}
+.left > p{
+    font-size: 18px;
+    color: #737380;
+}
+
+.input-group{
+    display: flex;
+    justify-content: space-evenly;
+}
+.input-group > input:not(:last-child){
+    margin-right: 5px;
+}

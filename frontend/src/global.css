@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    font: 400 14px 'Roboto', sans-serif;
+    background-color: #f0f0f5;
+    -webkit-font-smoothing: antialiased; 
+}
+
+input,button, textarea{
+    font: 400 18px 'Roboto', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+form input{
+    width: 100%;
+    height: 60px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin: 5px 0;
+}
+form textarea{
+    width: 100%;
+    min-height: 140px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin: 5px 0;
+    resize: vertical;
+}
+
+.button{
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    padding: 0 20px;
+    background-color: #e02041;
+    border: 0;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: filter 200ms;
+}
+.button:hover{
+    filter: brightness(90%);
+}
+.button-alt{
+    background-color: transparent;
+    border: 1px solid #e02041;
+    color: #e02041;
+}
+
+.backlink{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #41414d;
+}
+.backlink svg{
+    margin-right: 5px;
+}

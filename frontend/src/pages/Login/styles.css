@@ -1,0 +1,26 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.form{
+    width: 100%;
+    max-width: 350px;
+    margin-right: 50px;
+}
+
+.form > form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.form > form > h1{
+    font-size: 25px;
+    margin-bottom: 32px;
+}
