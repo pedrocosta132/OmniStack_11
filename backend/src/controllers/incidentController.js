@@ -14,6 +14,7 @@ module.exports = {
         .select([
             'incident.*',
             'ong.email',
+            'ong.name',
             'ong.city'
         ]);
 
@@ -37,6 +38,9 @@ module.exports = {
     async create(req, res){
         const {title, description, value} = req.body;
         const id_ong = req.headers.authorization;
+
+        if(!id_ong)
+            res.status(400).json({ error: 'No ONG found with specific id.'});
 
         const [id] = await connection('incident').insert({
             title,
